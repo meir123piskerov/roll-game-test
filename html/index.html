@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll game</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scrip.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-score">
+        <input
+          type="text"
+          placeholder="enter the score for this game"
+          id="gameScore"
+        />
+        <button onclick="returnText()">Submit</button>
+      </div>
+    </header>
+    <main>
+      <div id="player1" class="player1">
+        <p>player 1 total score</p>
+        <p id="player 1 total score">0</p>
+        <p>player 1 round score</p>
+        <p id="player 1" class="player 1"></p>
+      </div>
+      <div id="player2" class="player2">
+        <p>player 2 total score</p>
+        <p id="player 2 total score">0</p>
+        <p>player 2 round score</p>
+        <p id="player 2" class="player 2"></p>
+      </div>
+      <div>
+        <button><a href="index.html">New Game</a></button>
+        <button id="hold" class="hold" onclick="hold()">Hold</button>
+        <button id="roll" class="roll" onclick="gameRoll()">
+          roll dice
+          <p id="roll-btn">5</p>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -129,7 +129,10 @@ function gameRoll() {
         return;
       }
     }
-  } else {
+  } else if (
+    player1.pointsTotal > Number(game) ||
+    player2.pointsTotal > Number(game)
+  ) {
     if (player1.pointsTotal >= game) {
       alert("player 1 won  click New Game");
     } else if (player2.pointsTotal >= game) {

@@ -1,0 +1,16 @@
+body {
+  background-color: blue;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+}
+
+.player1 {
+  background-color: none;
+}
+
+.player2 {
+  background-color: none;
+}
